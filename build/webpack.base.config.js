@@ -18,7 +18,7 @@ module.exports = {
                 loader: 'babel-loader',//loader的名称（必须）
             },
             {
-                test: /\.(sc|c)ss$/,
+                test: /\.(le|c)ss$/,
                 use:[
                     {
                         loader: MiniCssExtractPlugin.loader,
@@ -45,7 +45,7 @@ module.exports = {
                         }
                     },
                     {
-                        loader: 'sass-loader'
+                        loader: 'less-loader'
                     }
                 ]
             },
